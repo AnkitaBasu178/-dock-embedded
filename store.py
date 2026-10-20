@@ -4,7 +4,7 @@ import time
 from collections import deque
 from typing import Optional
 
-from .models import Reading
+from models import Reading
 
 
 class Store:

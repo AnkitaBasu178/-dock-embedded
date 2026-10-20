@@ -4,16 +4,16 @@ import threading
 from datetime import datetime, timezone
 from typing import Optional
 
-from . import config, simulator
-from .aggregator import Aggregator
-from .check import sensor_check
-from .ecgbuf import EcgBuffer
-from .models import SENSOR_INFO
-from .parser import parse_ecg_line, parse_line, parse_status_line
-from .pusher import Pusher
-from .reader import SerialSupervisor
-from .status import StatusBoard
-from .store import Store
+import config, simulator
+from aggregator import Aggregator
+from check import sensor_check
+from ecgbuf import EcgBuffer
+from models import SENSOR_INFO
+from parser import parse_ecg_line, parse_line, parse_status_line
+from pusher import Pusher
+from reader import SerialSupervisor
+from status import StatusBoard
+from store import Store
 
 logger = logging.getLogger("dock.service")
 

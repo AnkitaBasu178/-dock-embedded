@@ -1,5 +1,5 @@
 """Sensor check: is each sensor present and ready to measure?  (No clinical meaning.)"""
-from .models import SENSOR_INFO
+from models import SENSOR_INFO
 
 FRESH = 6.0  # a board that has not reported for this many seconds counts as not connected
 

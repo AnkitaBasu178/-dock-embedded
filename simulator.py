@@ -9,8 +9,8 @@ import threading
 import time
 from datetime import datetime, timezone
 
-from .models import SENSORS, UNITS, BloodPressureValue, Reading
-from .store import Store
+from models import SENSORS, UNITS, BloodPressureValue, Reading
+from store import Store
 
 
 def run(store: Store, stop: threading.Event, speed: float = 1.0) -> None:

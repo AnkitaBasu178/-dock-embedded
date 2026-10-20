@@ -11,10 +11,10 @@ from datetime import datetime, timezone
 from statistics import median
 from typing import Callable, Optional
 
-from . import config, confidence
-from .models import SENSORS, UNITS, Reading
-from .parser import Sample
-from .store import Store
+import config, confidence
+from models import SENSORS, UNITS, Reading
+from parser import Sample
+from store import Store
 
 WINDOW = {"heart_rate": 5, "spo2": 5, "temperature": 5, "weight": 5, "height": 5, "gsr": 5}
 MAX_ATTEMPTS = 3

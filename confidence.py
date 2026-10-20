@@ -16,7 +16,7 @@ Nothing here looks at whether a value is "high" or "low" clinically.
 """
 from statistics import mean
 
-from .parser import Sample
+from parser import Sample
 
 # (spread that is perfectly good, spread that is as bad as it gets)
 SPREAD = {

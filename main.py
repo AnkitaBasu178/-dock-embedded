@@ -8,9 +8,9 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import HTMLResponse, JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-from . import config
-from .models import ErrorBody, Reading, VitalsResponse
-from .service import Service
+import config
+from models import ErrorBody, Reading, VitalsResponse
+from service import Service
 
 
 ECG_PAGE = """<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
