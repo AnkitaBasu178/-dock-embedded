@@ -1,0 +1,18 @@
+# Render Blueprint: the cloud copy of the service (no hardware here, the Mac pushes data to it).
+services:
+  - type: web
+    name: dock-embedded
+    runtime: python
+    region: singapore
+    plan: free
+    rootDir: embedded
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: RELAY
+        value: "true"
+      - key: INGEST_KEY
+        generateValue: true

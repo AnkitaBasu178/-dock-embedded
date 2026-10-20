@@ -1,0 +1,7 @@
+"""`python -m app` -> serve on 0.0.0.0:$PORT (default 8010)."""
+import uvicorn
+
+from . import config
+
+if __name__ == "__main__":
+    uvicorn.run("app.main:app", host="0.0.0.0", port=config.port())
